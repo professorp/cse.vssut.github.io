@@ -1635,6 +1635,7 @@ a:hover, a:focus, a:active {
 
 .probootstrap-featured-news-box:hover .probootstrap-text h3, .probootstrap-featured-news-box:focus .probootstrap-text h3 {
   font-size: 18px;
+font-size: 3.5vw;
   margin: 0 0 10px 0;
   color: #ffffff;
 }
