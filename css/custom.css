@@ -1,1 +1,15 @@
 /* Your custom css code goes here */
+.probootstrap-animate img{
+	position: center;
+}
+#labs{
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+.probootstrap-sidebar-inner{
+	background-color: black;
+	
+}
+ul a{
+	color: #DBE2F6;
+}
