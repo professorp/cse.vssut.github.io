@@ -1,0 +1,70 @@
+[debug] [2017-12-27T13:04:47.048Z] ----------------------------------------------------------------------
+[debug] [2017-12-27T13:04:47.050Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aman\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2017-12-27T13:04:47.050Z] CLI Version:   3.16.0
+[debug] [2017-12-27T13:04:47.050Z] Platform:      win32
+[debug] [2017-12-27T13:04:47.050Z] Node Version:  v8.9.3
+[debug] [2017-12-27T13:04:47.051Z] Time:          Wed Dec 27 2017 18:34:47 GMT+0530 (India Standard Time)
+[debug] [2017-12-27T13:04:47.051Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-27T13:04:47.062Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-12-27T13:04:47.062Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Website_Works\cse_website\cse.vssut.github.io
+
+[warn] !  You have have not selected any features. Continuing will simply associate this folder with a Firebase project. Press Ctrl + C if you want to start over.
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-12-27T13:04:56.130Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed Dec 27 2017 18:34:56 GMT+0530 (India Standard Time)
+[debug] [2017-12-27T13:04:56.215Z] Error: getaddrinfo ENOENT admin.firebase.com:443
+    at Object._errnoException (util.js:1024:11)
+    at errnoException (dns.js:55:15)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOENT admin.firebase.com:443
+[debug] [2017-12-27T13:09:29.640Z] ----------------------------------------------------------------------
+[debug] [2017-12-27T13:09:29.656Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aman\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2017-12-27T13:09:29.656Z] CLI Version:   3.16.0
+[debug] [2017-12-27T13:09:29.656Z] Platform:      win32
+[debug] [2017-12-27T13:09:29.656Z] Node Version:  v8.9.3
+[debug] [2017-12-27T13:09:29.656Z] Time:          Wed Dec 27 2017 18:39:29 GMT+0530 (India Standard Time)
+[debug] [2017-12-27T13:09:29.656Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-27T13:09:29.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-12-27T13:09:29.656Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Website_Works\cse_website\cse.vssut.github.io
+
+[warn] !  You have have not selected any features. Continuing will simply associate this folder with a Firebase project. Press Ctrl + C if you want to start over.
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-12-27T13:09:37.007Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed Dec 27 2017 18:39:37 GMT+0530 (India Standard Time)

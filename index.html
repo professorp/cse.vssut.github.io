@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+         <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <!--Firebase Integrated-->
+      
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+      
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -261,9 +274,9 @@
                           <a href="#" class="probootstrap-featured-news-box">
                             <figure class="probootstrap-media"><img src="img/img_sm_3.jpg" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>Winter internship at C-DAC Pune</h3>
-                              <p>32 CSE Students of VSSUT Burla for Two Weeks Winter Internship @ CDAC.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 2, 2017</span>
+                              <h3 id="head0">Winter internship at C-DAC Pune</h3>
+                              <p id="text0">32 CSE Students of VSSUT Burla for Two Weeks Winter Internship @ CDAC.</p>
+                              <span class="probootstrap-date" id="dat0"><i class="icon-calendar"></i>Dec 2, 2017</span>
                               
                             </div>
                           </a>
@@ -273,9 +286,9 @@
                           <a href="#" class="probootstrap-featured-news-box">
                             <figure class="probootstrap-media"><img src="img/img_sm_1.jpg" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>VSSUT TEAM,qualified for onsite semifinal round of ACM ICPC-2017.</h3>
-                              <p>Our team secured 3rd Position in the state.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 3, 2017</span>
+                              <h3 id="head1">VSSUT TEAM,qualified for onsite semifinal round of ACM ICPC-2017.</h3>
+                              <p id="text1">Our team secured 3rd Position in the state.</p>
+                              <span class="probootstrap-date" id="dat1"><i class="icon-calendar"></i>Dec 3, 2017</span>
                               
                             </div>
                           </a>
@@ -285,9 +298,9 @@
                           <a href="#" class="probootstrap-featured-news-box">
                             <figure class="probootstrap-media"><img src="img/img_sm_2.jpg" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>Bootstrap:Computer Literacy Event</h3>
-                              <p>Computer literacy mission program by CSE Dept VSSUT Burla aims to educate 10,000 people in 2018.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 7, 2017</span>
+                              <h3 id="head2">Bootstrap:Computer Literacy Event</h3>
+                              <p id="text2">Computer literacy mission program by CSE Dept VSSUT Burla aims to educate 10,000 people in 2018.</p>
+                              <span class="probootstrap-date" id="dat2"><i class="icon-calendar"></i>Dec 7, 2017</span>
                               
                             </div>
                           </a>
@@ -297,9 +310,9 @@
                           <a href="#" class="probootstrap-featured-news-box">
                             <figure class="probootstrap-media"><img src="img/img_sm_3.jpg" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>Infosys Code Camp 2017</h3>
-                              <p>One team from VSSUT participated in this event and came out with flying colours.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 16, 2017</span>
+                              <h3 id="head3">Infosys Code Camp 2017</h3>
+                              <p id="text3">One team from VSSUT participated in this event and came out with flying colours.</p>
+                              <span class="probootstrap-date" id="dat3"><i class="icon-calendar"></i>Dec 16, 2017</span>
                             </div>
                           </a>
                         </div>
@@ -722,11 +735,16 @@
 
     </div>
     <!-- END wrapper -->
-    
+ 
+ 
 
+
+      <!-------------------->
+    <script src="js/app.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+    
 
   </body>
 </html>
