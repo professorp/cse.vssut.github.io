@@ -1449,8 +1449,8 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-flex-block .probootstrap-image {
-  width: 67%;
-  background-size: cover;
+  width: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   margin-right: 0px;
   position: relative;
