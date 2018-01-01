@@ -1,3 +1,4 @@
+
 /*!==============================
  * Theme Name: Enlight
  * Theme URL: https://probootstrap.com/enlight-free-education-responsive-bootstrap-website-template
@@ -2514,7 +2515,6 @@ font-size: 3.5vw;
 }
 
 .probootstrap-testimony-wrap {
-  background: #ffffff;
   border-radius: 4px;
   padding: 20px;
 }
@@ -2851,7 +2851,7 @@ font-size: 3.5vw;
 }
 
 .probootstrap-testimonial:before {
-  background: rgba(0, 0, 0, 0.7) !important;
+  background:  #6a41ed !important;
 }
 
 .probootstrap-testimonial .section-heading p {
