@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/logo.png?alt=media&token=f61d2567-b82f-4ab1-b7a8-2a46c0a1a0e2">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSE:Computer Science & Engineering Society</title>
+    <meta name="description" content="The Official website of Computer Science & Engineering Society,VSSUT,Burla">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+         <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <!--Firebase Integrated-->
+      
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+      
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
+    
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+      
+      <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>Vssut,Burla,Odisha</span>
+              <span><i class="icon-phone2"></i>0663-243-0211</span>
+              <span><i class="icon-mail"></i>info@csevssut.in</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <!--<li><a href="#"><i class="icon-instagram2"></i></a></li>-->
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="CSE">CSE</a>
+          </div> 
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="notice.html">NoticeBoard</a></li>
+              <li><a href="teachers.html">Faculties</a></li>
+               <!--<li><a href="students.html">Students</a></li>-->
+              <li><a href="events.html">Events</a></li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">More</a>
+                <ul class="dropdown-menu">
+                   <li><a href="about.html">Vission & Mission</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+                  <!--<li><a href="course-single.html">Course Single</a></li>-->
+                   <li><a href="laboratories.html">Laboratories</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Activities</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="project.html">Projects</a></li>
+                      <!--<li><a href="#">Workshop & Seminar</a></li>
+                      <li><a href="#">Research & Consultancy</a></li>-->
+                      <li><a href="peo_po.html">PEO & PO</a></li>
+                    </ul>
+                  </li>
+                  <!--<li><a href="news.html">Student Corner</a></li>-->
+                </ul>
+              </li>
+               <!-- <li><a href="teachers.html">Alumni</a></li>-->
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
+        <section class="probootstrap-section probootstrap-section-colored probootstrap-bg probootstrap-custom-heading probootstrap-tab-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center section-heading probootstrap-animate">
+              <h2 class="mb0">Programmes In CSE</h2>
+            </div>
+          </div>
+        </div>
+        <div class="probootstrap-tab-style-1">
+          <ul class="nav nav-tabs probootstrap-center probootstrap-tabs no-border">
+            <li class="active"><a data-toggle="tab" href="#featured-news">B.Tech</a></li>
+            <li><a data-toggle="tab" href="#upcoming-events">M.Tech</a></li>
+          </ul>
+        </div>
+      </section>
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+        <section class="probootstrap-section probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              
+              <div class="tab-content">
+                <div id="featured-news" class="tab-pane fade in active">
+                  <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+                            <h2>B.Tech Programme in CSE</h2>
+                                <p class="lead">Programme Educational Objectives</p>
+                        </div>
+                    </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 1</h3>
+                  <p>To provide graduating students with core competencies by strengthening their mathematical, scientific and basic engineering fundamentals.</p>
+                </div>  
+              </div>
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 2</h3>
+                  <p>To train graduates in diversified and applied areas with analysis, design and synthesis of data to create novel products and solutions to meet currentindustrial and societal needs. </p>
+                </div>
+              </div>
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 3</h3>
+                  <p> To inculcate high professionalism among the students by providing technical and soft skills with ethical standards.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 4</h3>
+                  <p>To promote collaborative learning and spirit of team work through multidisciplinary projects and diverse professional activities.</p>
+                </div>
+              </div>
+                 <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 5</h3>
+                  <p> To encourage students for higher studies, research activities and entrepreneurial skills by imparting interactive quality teaching and organizingsymposiums, conferences, seminars, workshops and technical discussions.</p>
+                </div>  
+              </div>
+            <!--  <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Technical Library</h3>
+                  <p>The department has a  library with good number of books, journals and magazines to help the students to upgrade their outlook in various areas of Computer Science. </p>
+                </div>
+              </div>-->
+            </div>
+          </div>
+          <!-- END row --> 
+        <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <!--<h2>B.Tech Programme in CSE</h2>-->
+             <p class="lead">Programme Outcomes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                 <!-- <h3>PEO - 1</h3>-->
+                  <p>An ability to apply fundamental knowledge of computing, mathematics, science and engineering appropriate to the discipline.</p>
+                </div>  
+              </div>
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+               <!--   <h3>PEO - 2</h3>-->
+                  <p>An ability to analyze a problem, identify and formulate the computing requirements appropriate to its solution. </p>
+                </div>
+              </div>
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                 <!-- <h3>PEO - 3</h3>-->
+                  <p> An ability to formulate models, design and conduct experiments, as well as to analyze and interpret data.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+             
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <!--<h3>PEO - 4</h3>-->
+                  <p>An ability to function effectively individually and on teams, including diverse and multidisciplinary, to accomplish a common goal.</p>
+                </div>
+              </div>
+                 <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <!--<h3>PEO - 5</h3>-->
+                  <p> An ability to analyze the local and global impact of computing on individuals, organizations, and society.</p>
+                </div>  
+              </div>
+             <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                <!--  <h3>Technical Library</h3>-->
+                  <p>An ability to use current techniques, skills, and modern tools necessary for computing practice. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END row -->
+        </div>
+      </section>
+     </div>
+         <div id="upcoming-events" class="tab-pane fade in active">
+            <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <h2>M.Tech Programme in CSE</h2>
+             <p class="lead">Programme Educational Objectives</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 1</h3>
+                  <p>The graduates will be able to employ their expertise in engineering to resolve various industrial and technological problems.</p>
+                </div>  
+              </div>
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 2</h3>
+                  <p>The graduates will be able to build up an ability to analyze the requirements, understand the technical specification, design and provide novel engineering solutions and produce efficient product design. </p>
+                </div>
+              </div>
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 3</h3>
+                  <p> The graduates will be able to reveal professionalism, ethical attitude, strong communication skills and maintain good teamwork spirit in their profession.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+             
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 4</h3>
+                  <p>The graduates will be able to interact with their peers in industry and society as engineering professionals and leaders to set up technical ambience in the society.</p>
+                </div>
+              </div>
+                 <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 5</h3>
+                  <p> The graduates will be able to employ their skill with a strong base to prepare them for higher learning and research activities.</p>
+                </div>  
+              </div>
+             <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>PEO - 6</h3>
+                  <p>The graduates will be emerged as leaders in engineering, management, applied research, and education.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END row -->
+        <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <!--<h2>B.Tech Programme in CSE</h2>-->
+             <p class="lead">Programme Outcomes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                 <!-- <h3>PEO - 1</h3>-->
+                  <p>Required expertise and knowledge of advanced computing and applications of engineering.</p>
+                </div>  
+              </div>
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+               <!--   <h3>PEO - 2</h3>-->
+                  <p>An ability to function or lead multidisciplinary team, work cohesively and produce results.</p>
+                </div>
+              </div>
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                 <!-- <h3>PEO - 3</h3>-->
+                  <p>The broad education necessary to understand the impact of engineering solutions in a global, economic, environmental, and societal context.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <!--<h3>PEO - 4</h3>-->
+                  <p>An interest to investigate complex problems, deriving joy from learning and discovering new things.</p>
+                </div>
+              </div>
+                 <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <!--<h3>PEO - 5</h3>-->
+                  <p> Graduates are able to participate and succeed in various competitive examinations for research and development.</p>
+                </div>  
+              </div>
+             <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                <!--  <h3>Technical Library</h3>-->
+                  <p>Necessary skill set to design and conduct scientific experiments as well as to analyze and interpret numerous data sets. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END row -->
+        </div>
+        </section>
+            </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+        </section>
+        
+        
+       <!---------------------------------------------------------------------------------------------------------------------------------> 
+        <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+             <!-- <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About The Society</h3>
+                <p>The Society fosters quality technical education and thereby facilitating the extensive research environment, equipping students with latest skills in the field of technology supplemented with practical orientation to face challenges in the fast morphing modern computing industry and academia for the betterment of the society.</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                 <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>-->
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-github"></i></a></li>
+                  <li><a href="#"><i class="icon-behance"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>VSSUT,Burla,Sambalpur,Odisha</span></li>
+                  <li><i class="icon-mail"></i><span>info@vssut.ac.in</span></li>
+                  <li><i class="icon-phone2"></i><span>(0663)2430211</span></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <!-- END row -->
+          
+        </div>
+
+        <div class="probootstrap-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <p>&copy; 2017 <a href="https://probootstrap.com/">Computer Science & Engineering Society</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="#">The Doers Network</a></p>
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END wrapper -->
+ 
+ 
+
+
+      <!-------------------->
+    <script src="js/app.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+
+  </body>
+</html>

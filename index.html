@@ -2,7 +2,7 @@
 
 
 <html lang="en">
-<link rel="shortcut icon" href="img/logo.png">
+<link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/logo.png?alt=media&token=f61d2567-b82f-4ab1-b7a8-2a46c0a1a0e2">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,22 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+
+         <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <!--Firebase Integrated-->
+      
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+      
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -70,31 +85,31 @@
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="courses.html">NoticeBoard</a></li>
+              <li><a href="notice.html">NoticeBoard</a></li>
               <li><a href="teachers.html">Faculties</a></li>
-               <li><a href="students.html">Students</a></li>
+               <!--<li><a href="students.html">Students</a></li>-->
               <li><a href="events.html">Events</a></li>
               <li class="dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">More</a>
                 <ul class="dropdown-menu">
                    <li><a href="about.html">Vission & Mission</a></li>
                   <li><a href="courses.html">Courses</a></li>
-                  <li><a href="course-single.html">Course Single</a></li>
+                  <!--<li><a href="course-single.html">Course Single</a></li>-->
                    <li><a href="laboratories.html">Laboratories</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
                   <li class="dropdown-submenu dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Activities</span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Projects</a></li>
-                      <li><a href="#">Workshop & Seminar</a></li>
-                      <li><a href="#">Research & Consultancy</a></li>
-                      <li><a href="#">PEO & PO</a></li>
+                      <li><a href="project.html">Projects</a></li>
+                      <!--<li><a href="#">Workshop & Seminar</a></li>
+                      <li><a href="#">Research & Consultancy</a></li>-->
+                      <li><a href="peo_po.html">PEO & PO</a></li>
                     </ul>
                   </li>
-                  <li><a href="news.html">Student Corner</a></li>
+                  <!--<li><a href="news.html">Student Corner</a></li>-->
                 </ul>
               </li>
-                <li><a href="teachers.html">Alumni</a></li>
+               <!-- <li><a href="teachers.html">Alumni</a></li>-->
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -103,7 +118,7 @@
 
       <section class="flexslider">
         <ul class="slides">
-          <li style="background-image: url(img/slider_1.jpg)" class="overlay">
+          <li style="background-image: url(https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/slider_1.jpg?alt=media&token=ace55246-356d-49bd-89f7-537643e34bef)" class="overlay">
             <div class="container">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -114,7 +129,7 @@
               </div>
             </div>
           </li>
-          <li style="background-image: url(img/slider_2.jpg)" class="overlay">
+          <li style="background-image: url(https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/slider_2.jpg?alt=media&token=d4f236f4-4550-4c1e-a51c-bd3469b21c58)" class="overlay">
             <div class="container">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -126,7 +141,7 @@
             </div>
             
           </li>
-          <li style="background-image: url(img/slider_3.jpg)" class="overlay">
+          <li style="background-image: url(https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/slider_3.jpg?alt=media&token=6aa9cb27-0e10-4bdf-b4a8-1b302f9c647e)" class="overlay">
             <div class="container">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -160,7 +175,7 @@
                   <p>The Department of Computer Science and Engineering, Veer Surendra Sai University of Technology,Burla was established in 1994.It has produced high quality technocrats for the last few decades to cater to the needs of hardware and software industry, R&D organizations, and academic Institutions. </p>
                   <p><a href="#" class="btn btn-primary">Learn More</a></p>
                 </div>
-                <div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
+                <div class="probootstrap-image probootstrap-animate" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/slider_3.jpg?alt=media&token=6aa9cb27-0e10-4bdf-b4a8-1b302f9c647e)">
                   <a href="https://vimeo.com/45830194" class="btn-video popup-vimeo"><i class="icon-play3"></i></a>
                 </div>
               </div>
@@ -231,7 +246,7 @@
         </div>
       </section>
 
-      <section class="probootstrap-section probootstrap-section-colored probootstrap-bg probootstrap-custom-heading probootstrap-tab-section" style="background-image: url(img/slider_2.jpg)">
+      <section class="probootstrap-section probootstrap-section-colored probootstrap-bg probootstrap-custom-heading probootstrap-tab-section" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/slider_2.jpg?alt=media&token=d4f236f4-4550-4c1e-a51c-bd3469b21c58)">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section-heading probootstrap-animate">
@@ -260,11 +275,11 @@
                       <div class="owl-carousel" id="owl1">
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_3.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_3.jpg?alt=media&token=7b8f9199-0f2c-432f-9c27-8ee8c17cde91" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>Winter internship at C-DAC Pune</h3>
-                              <p>32 CSE Students of VSSUT Burla for Two Weeks Winter Internship @ CDAC.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 2, 2017</span>
+                              <h3 id="head0">Winter internship at C-DAC Pune</h3>
+                              <p id="text0">32 CSE Students of VSSUT Burla for Two Weeks Winter Internship @ CDAC.</p>
+                              <span class="probootstrap-date" id="dat0"><i class="icon-calendar"></i>Dec 2, 2017</span>
                               
                             </div>
                           </a>
@@ -272,11 +287,11 @@
                         <!-- END item -->
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_1.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_1.jpg?alt=media&token=e201698f-6a27-4836-b6ad-3f5fddf8c94c" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>VSSUT TEAM,qualified for onsite semifinal round of ACM ICPC-2017.</h3>
-                              <p>Our team secured 3rd Position in the state.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 3, 2017</span>
+                              <h3 id="head1">VSSUT TEAM,qualified for onsite semifinal round of ACM ICPC-2017.</h3>
+                              <p id="text1">Our team secured 3rd Position in the state.</p>
+                              <span class="probootstrap-date" id="dat1"><i class="icon-calendar"></i>Dec 3, 2017</span>
                               
                             </div>
                           </a>
@@ -284,11 +299,11 @@
                         <!-- END item -->
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_2.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_2.jpg?alt=media&token=ea895789-e15e-40f7-a274-ca41c00aa664" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>Bootstrap:Computer Literacy Event</h3>
-                              <p>Computer literacy mission program by CSE Dept VSSUT Burla aims to educate 10,000 people in 2018.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 7, 2017</span>
+                              <h3 id="head2">Bootstrap:Computer Literacy Event</h3>
+                              <p id="text2">Computer literacy mission program by CSE Dept VSSUT Burla aims to educate 10,000 people in 2018.</p>
+                              <span class="probootstrap-date" id="dat2"><i class="icon-calendar"></i>Dec 7, 2017</span>
                               
                             </div>
                           </a>
@@ -296,22 +311,23 @@
                         <!-- END item -->
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_3.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_3.jpg?alt=media&token=7b8f9199-0f2c-432f-9c27-8ee8c17cde91" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
-                              <h3>Infosys Code Camp 2017</h3>
-                              <p>One team from VSSUT participated in this event and came out with flying colours.</p>
-                              <span class="probootstrap-date"><i class="icon-calendar"></i>Dec 16, 2017</span>
+                              <h3 id="head3">Infosys Code Camp 2017</h3>
+                              <p id="text3">One team from VSSUT participated in this event and came out with flying colours.</p>
+                              <span class="probootstrap-date" id="dat3"><i class="icon-calendar"></i>Dec 16, 2017</span>
                             </div>
                           </a>
                         </div>
                         <!-- END item -->
                       </div>
                     </div>
+                      
                   </div>
                   <!-- END row -->
                   <div class="row">
                     <div class="col-md-12 text-center">
-                      <p><a href="#" class="btn btn-primary">View all news</a></p>  
+                      <p><a href="notice.html" class="btn btn-primary">View all news</a></p>  
                     </div>
                   </div>
                 </div>
@@ -321,7 +337,7 @@
                       <div class="owl-carousel" id="owl2">
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_3.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_3.jpg?alt=media&token=7b8f9199-0f2c-432f-9c27-8ee8c17cde91" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
                               <h3>SRUJAN 2K18</h3>
                               <span class="probootstrap-date"><i class="icon-calendar"></i>Jan 12-14, 2018</span>
@@ -333,7 +349,7 @@
                         <!-- END item -->
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_1.jpg" alt="Free Bootstrap Template by ProBootstrap.com" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_1.jpg?alt=media&token=e201698f-6a27-4836-b6ad-3f5fddf8c94c" alt="Free Bootstrap Template by ProBootstrap.com" class="img-responsive"></figure>
                             <div class="probootstrap-text">
                               <h3>Bootstrap:A Computer Literacy Event</h3>
                               <span class="probootstrap-date"><i class="icon-calendar"></i>Jan, 2018</span>
@@ -344,7 +360,7 @@
                         <!-- END item -->
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_2.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_2.jpg?alt=media&token=ea895789-e15e-40f7-a274-ca41c00aa664" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
                               <h3>BIG-O:A 3 hour Online Coding Competition</h3>
                               <span class="probootstrap-date"><i class="icon-calendar"></i>Jan, 2018</span>
@@ -355,7 +371,7 @@
                         <!-- END item -->
                         <div class="item">
                           <a href="#" class="probootstrap-featured-news-box">
-                            <figure class="probootstrap-media"><img src="img/img_sm_3.jpg" alt="" class="img-responsive"></figure>
+                            <figure class="probootstrap-media"><img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/img_sm_3.jpg?alt=media&token=7b8f9199-0f2c-432f-9c27-8ee8c17cde91" alt="" class="img-responsive"></figure>
                             <div class="probootstrap-text">
                               <h3>V_Hacks:An Online Hackathon</h3>
                               <span class="probootstrap-date"><i class="icon-calendar"></i>Jan, 2018</span>
@@ -391,17 +407,17 @@
           </div>
           <!-- END row -->
           <div class="row">
-            <div class="col-xs-12 col-md-6">
+            <div class="col-md-6">
               <div class="probootstrap-service-2 probootstrap-animate">
                 <div class="image">
                   <div class="image-bg">
-                    <img src="img/design.png" alt="Free Bootstrap Template by ProBootstrap.com">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/design.jpg?alt=media&token=d3316e44-bc0b-430e-9b1e-870d990abac3" alt="Free Bootstrap Template by ProBootstrap.com">
                   </div>
                 </div>
                 <div class="text">
                   <span class="probootstrap-meta"><!--<i class="icon-calendar2"></i>--></span>
                   <h3>Design & Analysis Of Algorithms</h3>
-                  <p>The objective of this course is to implement polynomial addition, heap sort, DFS and BFS, estimate time and space complexity of an algorithm, and learn NP complete and NP hard problem and their solutions.</p>
+                  <p>The objective of this course is to implement polynomial addition,heap sort, DFS & BFS,estimate time & space complexity of an algorithm,& learn NP complete & hard problem and their solutions.</p>
                   <!--<p><a href="#" class="btn btn-primary">Enroll now</a> <span class="enrolled-count">2,928 students enrolled</span></p>-->
                 </div>
               </div>
@@ -409,7 +425,7 @@
               <div class="probootstrap-service-2 probootstrap-animate">
                 <div class="image">
                   <div class="image-bg">
-                    <img src="img/graphic.png" alt="Free Bootstrap Template by ProBootstrap.com">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/graphic.jpg?alt=media&token=9a34f5ab-3f71-4f8e-8939-d40906ca7eab" alt="Free Bootstrap Template by ProBootstrap.com">
                   </div>
                 </div>
                 <div class="text">
@@ -419,13 +435,13 @@
                   <!--<p><a href="#" class="btn btn-primary">Enroll now</a> <span class="enrolled-count">7,202 students enrolled</span></p>-->
                 </div>
               </div>
-
-            </div>
+              </div>
+            
             <div class="col-md-6">
               <div class="probootstrap-service-2 probootstrap-animate">
                 <div class="image">
                   <div class="image-bg">
-                    <img src="img/micoprocessor.jpg" alt="Free Bootstrap Template by ProBootstrap.com">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/graphic.jpg?alt=media&token=9a34f5ab-3f71-4f8e-8939-d40906ca7eab" alt="Free Bootstrap Template by ProBootstrap.com">
                   </div>
                 </div>
                 <div class="text">
@@ -439,7 +455,7 @@
               <div class="probootstrap-service-2 probootstrap-animate">
                 <div class="image">
                   <div class="image-bg">
-                    <img src="img/artificial.jpg" alt="Free Bootstrap Template by ProBootstrap.com">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/artificial.jpg?alt=media&token=79ce5c9b-9e78-429a-8743-a44ad4916e07" alt="Free Bootstrap Template by ProBootstrap.com">
                   </div>
                 </div>
                 <div class="text">
@@ -472,7 +488,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/rm_sir.jpg" alt="Dr.Rakesh Mohanty" class="img-responsive">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/rm_sir.jpg?alt=media&token=a26a7624-bf53-4b8d-8857-4c30e4e8beed" alt="Dr.Rakesh Mohanty" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Dr.Rakesh Mohanty</h3>
@@ -489,7 +505,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/amiya_sir.jpg" alt="Dr.Amiya Kumar Rath" class="img-responsive">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/amiya_sir.jpg?alt=media&token=04c5e40e-fc98-487e-9d89-bba3dc83f847" alt="Dr.Amiya Kumar Rath" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Dr.Amiya Kumar Rath</h3>
@@ -507,7 +523,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/manas_sir.jpg" alt="Dr.Manas Ranjan Kabat" class="img-responsive">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/manas_sir.jpg?alt=media&token=83439cde-c72c-4a62-b00e-29dfff61f36c" alt="Dr.Manas Ranjan Kabat" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Dr.Manas Ranjan Kabat</h3>
@@ -524,7 +540,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/majhi_sir.jpg" alt="Dr.Santosh Kumar Majhi" class="img-responsive">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/majhi_sir.jpg?alt=media&token=9e95bd0e-d0fc-4555-aafb-6c48044285b2" alt="Dr.Santosh Kumar Majhi" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Dr.Santosh Kumar Majhi</h3>
@@ -546,8 +562,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-              <h2>Alumni Testimonial</h2>
-              <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
+              <h2>Dream Projects</h2>
+<!--               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p> -->
             </div>
           </div>
           <!-- END row -->
@@ -558,26 +574,26 @@
 
                   <div class="probootstrap-testimony-wrap text-center">
                     <figure>
-                      <img src="img/person_1.jpg" alt="Free Bootstrap Template by ProBootstrap.com">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/LibraryCumReadingHall.jpg?alt=media&token=f533bfb0-48ab-4f9e-aaa4-b0a956408301" alt="img/person.png">
                     </figure>
-                    <blockquote class="quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo; <cite class="author"> &mdash; <span>Mike Fisher</span></cite></blockquote>
+                    <blockquote class="quote">&ldquo;Library&rdquo; <cite class="author"> &mdash; <span>Library cum Reading Hall</span></cite></blockquote>
                   </div>
 
                 </div>
                 <div class="item">
                   <div class="probootstrap-testimony-wrap text-center">
                     <figure>
-                      <img src="img/person_2.jpg" alt="Free Bootstrap Template by ProBootstrap.com">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/MultipurposeConferenceHall.jpg?alt=media&token=57a3ffd4-7b69-444b-a3aa-1cd66cc178cc" alt="img/person.png">
                     </figure>
-                    <blockquote class="quote">&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.&rdquo; <cite class="author"> &mdash;<span>Jorge Smith</span></cite></blockquote>
+                    <blockquote class="quote">&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.&rdquo; <cite class="author"> &mdash;<span>Multipurpose Conference Hall</span></cite></blockquote>
                   </div>
                 </div>
                 <div class="item">
                   <div class="probootstrap-testimony-wrap text-center">
                     <figure>
-                      <img src="img/person_3.jpg" alt="Free Bootstrap Template by ProBootstrap.com">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/csewebsite-bb32e.appspot.com/o/WorldClassRest%20Rooms.jpg?alt=media&token=997b39d5-6144-4b12-ac77-dc1911c5b2d2" alt="img/person.png">
                     </figure>
-                    <blockquote class="quote">&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.&rdquo; <cite class="author">&mdash; <span>Brandon White</span></cite></blockquote>
+                    <blockquote class="quote">&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.&rdquo; <cite class="author">&mdash; <span>World Class Rest Rooms</span></cite></blockquote>
                   </div>
                 </div>
                 
@@ -592,7 +608,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-              <h2>Why Choose CSE at  VSSUT</h2>
+              <h2>Why Choose CSE at VSSUT ?</h2>
              <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>-->
             </div>
           </div>
@@ -652,16 +668,6 @@
         </div>
       </section>
       
-      <section class="probootstrap-cta">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
-             <!-- <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>-->
-            </div>
-          </div>
-        </div>
-      </section>
       <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
           <div class="row">
@@ -672,9 +678,8 @@
                 <h3>Social</h3>
                 <ul class="probootstrap-footer-social">
                  <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>-->
-                  <li><a href="#"><i class="icon-facebook"></i></a></li>
-                  <li><a href="#"><i class="icon-github"></i></a></li>
-                  <li><a href="#"><i class="icon-behance"></i></a></li>
+                  <li><a href="https://www.facebook.com/groups/UCE.VSSUT.CSE.IT.MCA"><i class="icon-facebook"></i></a></li>
+                  <li><a href="https://github.com/cse-vssut/cse.vssut.github.io"><i class="icon-github"></i></a></li>
                   <li><a href="#"><i class="icon-linkedin"></i></a></li>
                   <li><a href="#"><i class="icon-youtube"></i></a></li>
                 </ul>
@@ -712,7 +717,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-8 text-left">
-                <p>&copy; 2017 <a href="https://probootstrap.com/">Computer Science & Engineering Society</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="#">The Doers Network</a></p>
+                <p>&copy; 2017 <a href="https://cse-vssut.github.io/cse.vssut.github.io/index.html">Computer Science & Engineering Society</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://enigmavssut.site/">Team Enigma</a></p>
               </div>
               <div class="col-md-4 probootstrap-back-to-top">
                 <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
@@ -724,11 +729,16 @@
 
     </div>
     <!-- END wrapper -->
-    
+ 
+ 
 
+
+      <!-------------------->
+    <script src="js/app.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+    
 
   </body>
 </html>
